@@ -20,7 +20,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'J.A.T.E',
+        title: 'B.V.C.E',
         favicon: './favicon.ico'
       }),
      
@@ -33,7 +33,7 @@ module.exports = () => {
         fingerprints: false,
         inject: true,
         name: 'Vanilla Copy Editor',
-        short_name: 'J.A.T.E',
+        short_name: 'B.V.C.E',
         description: "Your 'basic' vanilla latte copy editor cause its 1950 and we're using copy instead of text!",
         background_color: '#225ca3',
         theme_color: '#225ca3',
