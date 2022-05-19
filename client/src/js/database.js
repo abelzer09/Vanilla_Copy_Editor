@@ -13,11 +13,11 @@ const initdb = async () =>
   });
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
-export const putDb = async (content) => {
+export const putDb = async (id, content) => {
   const todosDb = await openDB('jate', 1);
   const tx = todosDb.transaction('jate', 'readwrite');
   const store = tx.objectStore('jate');
-  const request = store.put({ id: 1, value: content });
+  const request = store.put({ id: id, value: content });
   const result = await request;
   console.log('🚀 - data saved to the database', result);
 }
